@@ -1,1 +1,1 @@
-# hands-on-jenkins
+echo "hello world"
