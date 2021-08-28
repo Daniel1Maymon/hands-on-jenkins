@@ -9,11 +9,15 @@ pipeline {
             }
         }
         stage("test") {
-            steps {
-                script {
-                   echo "Testing the application..."
+            when {
+                steps {
+                    script {
+                      echo "Testing the application..."
+                    }
                 }
             }
+        }
+
         }
         stage("deploy") {
             steps {
