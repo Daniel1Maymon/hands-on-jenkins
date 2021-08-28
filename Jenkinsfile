@@ -22,5 +22,8 @@ pipeline {
                 }
             }
         }
+        post {
+           echo "Finish..." 
+        }
     }   
 }
