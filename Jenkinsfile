@@ -10,10 +10,13 @@ pipeline {
         }
         stage("test") {
             when {
-                steps {
-                    script {
-                      echo "Testing the application..."
-                    }
+                expression {
+                    BRANCH_NAME == 'main'
+                }
+            }
+            steps {
+                script {
+                  echo "Testing the application..."
                 }
             }
         }
