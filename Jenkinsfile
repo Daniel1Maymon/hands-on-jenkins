@@ -22,11 +22,6 @@ pipeline {
                 }
             }
         }
-         post {
-            always {
-                echo "Finish..." 
-            }
-        }
     }   
 
 }
