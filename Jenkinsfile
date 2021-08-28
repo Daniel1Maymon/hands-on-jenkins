@@ -22,8 +22,8 @@ pipeline {
                 }
             }
         }
-        post {
-           echo "Finish..." 
-        }
     }   
+    post {
+       echo "Finish..." 
+    }
 }
